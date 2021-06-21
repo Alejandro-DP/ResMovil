@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -14,12 +14,23 @@ export class HomePage {
    listado;
   constructor(private http: HttpClient) {
 
-    this.http.get("http://localhost/IonicDb/consultados.php").subscribe(snap =>{
-
-      console.log(snap);
-      this.listado=snap;
-    });
+   
 
   }
 
+
+  public login(event: any){
+/*     this.http.post<any>('https://reqres.in/api/posts', { title: 'Angular POST Request Example' }).subscribe(data => {
+        this.postId = data.id;
+    }) */
+      this.http.post<any>("http://localhost/IonicDb/validar.php", {
+        
+        user:event.target.user.value,
+        pass:event.target.pass.value
+      }).subscribe(data => {
+        console.log(data)
+    }) ;
+    
+ 
+  }
 }
