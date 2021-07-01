@@ -7,41 +7,35 @@
       <ion-card>
         <ion-item>
           <ion-icon slot="start" name="person"></ion-icon>
-          <ion-input type = "text" placeholder='Usuario'></ion-input>
+          <ion-input type = "text" placeholder='Usuario'[(ngMode1)]="usuario" ></ion-input>
         </ion-item>
       </ion-card>
   
       <ion-card>
         <ion-item>
           <ion-icon slot="start" name="mail"></ion-icon>
-          <ion-input type="email" placeholder="Correo"></ion-input>
+          <ion-input type="email" placeholder="Correo"[(ngMode1)]="email"></ion-input>
         </ion-item>
       </ion-card>
-      
-      <ion-card>
-        <ion-item>
-          <ion-icon slot="start" name="calendar"></ion-icon>
-          <ion-input type="date"></ion-input>
-        </ion-item>
-      </ion-card>
-  
+
       <ion-card>
         <ion-item>
           <ion-icon slot ="start" name="accessibility"></ion-icon>
-          <ion-input type = "text" placeholder = "Sexo"></ion-input>
+          <ion-input type = "text" placeholder = "Sexo" [(ngMode1)]="sexo"></ion-input>
         </ion-item>
       </ion-card>
   
       <ion-card>
         <ion-item>
           <ion-icon slot="start" name="key"></ion-icon>
-          <ion-input type="password" placeholder="Contraseña"></ion-input>
+          <ion-input type="password" placeholder="Contraseña" [(ngMode1)]="password"></ion-input>
         </ion-item>
       </ion-card>
   
-      <ion-button>Crear Cuenta</ion-button>
+      <ion-button href="http://localhost:8100/registro-exitoso">Crear Cuenta</ion-button>
       <br>
-      <a href="">Iniciar Sesión</a>
+      <ion-button href="http://localhost:8100/home">iniciar secion</ion-button>
+      <br>
     </ion-card-content>
   </ion-card>
 </ion-content>

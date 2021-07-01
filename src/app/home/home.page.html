@@ -8,20 +8,20 @@
     <ion-card>
       <ion-item>
         <ion-icon slot="start" name="person"></ion-icon>
-        <ion-input  placeholder='Usuario'></ion-input>
+        <ion-input  placeholder='Usuario'type="text" [(ngMode1)]="usuario"></ion-input>
       </ion-item>
     </ion-card>
 
     <ion-card>
       <ion-item>
         <ion-icon slot="start" name="key"></ion-icon>
-        <ion-input placeholder="Contraseña" type="password"></ion-input>
+        <ion-input placeholder="Contraseña" type="password" [(ngMode1)]="password"></ion-input>
       </ion-item>
     </ion-card>
-    <ion-button color='danger'>Ingresar</ion-button>
+    <ion-button color='danger'href="http://localhost:8100/estudiante">Ingresar</ion-button>
     <br>
     <ion-route url="/tutorial" component="page-tutorial">hola</ion-route>
-    <a href="">Crear Cuenta</a>
+    <a href="http://localhost:8100/crear-cuenta">Crear Cuenta</a>
     <a href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¿Olvidaste tu contraseña?</a>
   </div>
   
