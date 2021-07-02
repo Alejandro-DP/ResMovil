@@ -1,8 +1,7 @@
 {
   "name": "proyectoMoviles",
   "integrations": {
-    "capacitor": {},
-    "cordova": {}
+    "capacitor": {}
   },
   "type": "angular"
 }
