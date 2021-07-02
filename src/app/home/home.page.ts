@@ -37,7 +37,7 @@ export class HomePage {
   ]
 
    listado;
-  constructor(private http: HttpClient, private router: Router) {
+  constructor( private router: Router) {
 
     
 
@@ -60,6 +60,6 @@ export class HomePage {
     if (res.length > 0){
       this.router.navigate(['/estudiante']);
     }
-    console.log(this.users)
+    console.log(res)
   }
 }
