@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
+
 import {HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+
 
 
 
@@ -10,6 +12,8 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+
+<<<<<<< HEAD
 
    users = [{
     id:1,
@@ -59,4 +63,8 @@ export class HomePage {
     }
     console.log(this.users)
   }
+=======
+  constructor() {}
+
+>>>>>>> 3edc501cea49e265f2d73b3ea31cf2565807e119
 }
